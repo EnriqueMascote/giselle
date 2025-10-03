@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Balloon } from './components/Balloon';
 
 function App() {
   const [confetti, setConfetti] = useState<Array<{ id: number; left: number; delay: number }>>([]);
@@ -15,15 +14,6 @@ function App() {
 
   return (
     <div className="min-h-screen overflow-hidden relative bg-gradient-to-br from-lime-400 via-pink-600 to-yellow-300">
-      {/* Globos flotantes */}
-      <Balloon color="bg-red-500" delay={0} left="10%" />
-      <Balloon color="bg-blue-400" delay={1} left="25%" />
-      <Balloon color="bg-green-500" delay={2} left="40%" />
-      <Balloon color="bg-purple-600" delay={0.5} left="55%" />
-      <Balloon color="bg-orange-500" delay={1.5} left="70%" />
-      <Balloon color="bg-pink-400" delay={2.5} left="85%" />
-      <Balloon color="bg-cyan-500" delay={3} left="15%" />
-      <Balloon color="bg-yellow-400" delay={3.5} left="60%" />
 
       {/* Confetti mal hecho */}
       {confetti.map((item) => (
