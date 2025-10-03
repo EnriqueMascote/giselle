@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Balloon } from './components/Balloon';
+//import { Balloon } from './components/Balloon';
 
 function App() {
   const [confetti, setConfetti] = useState<Array<{ id: number; left: number; delay: number }>>([]);
